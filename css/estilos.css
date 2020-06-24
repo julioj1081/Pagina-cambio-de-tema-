@@ -1,0 +1,250 @@
+/*MODIFICACION DE ALTURA DE bxSlider
+.bx-wrapper, .bx-viewport{
+  height: 500px !important;
+}
+*/
+#box{
+  width: 50%;
+  float: left;
+  margin: 0px;
+  display: block;
+}
+
+#acordeon{
+  margin-top: 20px;
+}
+
+body{
+    background-image: url('../img/fondo.jpg');
+    background-attachment: fixed;
+}
+#global{
+    width: 65%;
+    margin: 0 auto;
+    margin-top: 29px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 20px #ccc;
+}
+#logo{
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    letter-spacing: .2rem;
+    line-height: 80px;
+    background-color: rgb(255, 145, 119);
+    width: 100%;
+    text-align: center;
+    height: 80px;
+    margin-bottom: 20px;
+    float: right;
+}
+.limpiar{
+    float: none;
+    clear: both;
+}
+
+#menu{
+    font-family: sans-serif;
+    background-color: #333;
+    width: 100%;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+#menu ul{
+    line-height: 50px;
+    list-style: none;
+}
+#menu ul li{
+    height: 50px;
+    display: inline-block;
+    transition: all 1200ms;
+}
+
+#menu ul li:hover{
+  background-color: rgb(255, 145, 119);
+}
+
+#menu a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 12px;
+}
+
+
+/*CONTENIDO*/
+#posts{
+  width: 60%;
+  float: left;
+  font-family: monospace;
+}
+.post h3{
+  font-size: 31px;
+  color: #333;
+  margin-top: 2px;
+}
+.post .fecha{
+  display: block;
+  color:rgba(87, 86, 81, 1);
+  font-size: 1.2rem;
+  margin-bottom: 12px;
+}
+.post p{
+  margin-top: 0px;
+  margin-bottom: 20px;
+  line-height: 25px;
+}
+.post{
+  padding: 3px;
+  text-align: justify;
+  margin-bottom: 40px;
+}
+.btnleer{
+  font-size: 12px;
+  text-align:center;
+  display: block;
+  padding: 12px;
+  background-color: #333;
+  color: white;
+  list-style: none;
+  width: 120px;
+  float: right;
+  cursor: pointer;
+  transition: all 500ms;
+}
+.btnleer:hover{
+  border-radius: 12px;
+  font-size: 0.9rem;
+  color: rgb(0, 0, 0);
+  background-color: rgba(189, 189, 189, 0.19);
+  border: 1px dashed rgb(0, 0, 0);
+}
+/*Estilo de sidebar*/
+#sidebar{
+  font-family: monospace;
+  width: 35%;
+  float: right;
+  line-height: 20px;
+  text-align: justify;
+}
+
+#sidebar h4{
+  text-align: center;
+  font-size: 20px;
+  font-weight: 20;
+}
+#sidebar h4 span{
+  background-color:white;
+  padding: 2px;
+  width: 100%;
+}
+#foto{
+  display: block;
+  width: 70%;
+  margin: 0 auto;
+}
+
+/*ESTILO DEL FORMULARIO*/
+form input[type="text"],input[type="password"],input[type="email"]{
+  padding: 5px;
+  border-radius: 2px;
+  border-color: rgb(120, 119, 117);
+  border: 1px solid #333;
+  width: 100%;
+  margin-top: 12px;
+  margin-bottom: 12px;
+  box-shadow: 0px 0px 4px #333;
+}
+
+form label{
+  font-size: 18px;
+  text-decoration: underline;
+  font-weight: 400;
+}
+
+form #btningresar{
+  background-color: rgb(230, 107, 18);
+  padding: 8px;
+  color: white;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: all 500ms;
+}
+form #btningresar:hover{
+  box-shadow: 0px 2px 5px rgb(24, 26, 23);
+}
+form #btnregistrar{
+  background-color: rgb(14, 66, 222);
+  padding: 8px;
+  color: white;
+  border-radius: 12px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: all 500ms;
+}
+form #btnregistrar:hover{
+  box-shadow: 0px 2px 5px rgb(138, 0, 14);
+}
+
+/*FOOTER*/
+footer{
+  font-family: cursive;
+  color: white;
+  background-color: rgb(64, 65, 65);
+  height: 80px;
+  margin: 0 auto;
+  width: 65%;
+  padding: 20px;
+  line-height: 34px;
+}
+footer .copy{
+  text-align: center;
+  line-height: 52px;
+  font-size: 14px;
+}
+
+/*CAMBIO DE TEMA*/
+#cambio_de_tema{
+  position: fixed;
+  top: 40%;
+  background: rgba(89, 88, 92, 0.86);
+  width: 45px;
+  height: 135px;
+  margin-left: 2%;
+}
+
+#rosa,#rojo, #cafe{
+  display: block;
+  margin: 0 auto;
+  width: 30px;
+  height: 30px;
+  border-radius: 12px;
+  border: 1px solid white;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+#rosa{
+  background-color: rgb(255, 145, 119);
+}
+#rojo{
+  background-color: rgba(246, 11, 53, 0.87);
+}
+#cafe{
+  background-color: rgba(154, 54, 11, 0.83);
+}
+
+
+/*Ir arriba*/
+.subir{
+  text-decoration: none;
+  display: block;
+  float: right;
+  color: white;
+  font-family: fantasy;
+  text-overflow: clip;
+
+}

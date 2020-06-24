@@ -1,0 +1,32 @@
+body{
+    background-image: url('../img/fondo3.jpg');
+    background-attachment: fixed;
+}
+#logo{
+    width: 100%;
+    background-color: rgba(154, 54, 11, 0.83);
+}
+#menu ul li:hover{
+  background-color: rgba(154, 54, 11, 0.83);
+}
+.btnleer{
+  background-color: rgba(154, 54, 11, 0.83);
+  color: white;
+  transition: all 400ms;
+}
+
+.btnleer:hover{
+  border-radius: 12px;
+  font-size: 0.9rem;
+  color: rgb(0, 0, 0);
+  background-color: rgba(189, 189, 189, 0.19);
+  border: 1px dashed rgb(0, 0, 0);
+}
+
+form #btningresar:hover{
+  box-shadow: 0px 2px 5px rgb(24, 26, 23);
+}
+
+form #btnregistrar:hover{
+  box-shadow: 0px 2px 5px rgb(138, 0, 14);
+}

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Plantilla sencilla</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <!--LLAMADO DE TEMAS -->
+    <link id="tema" rel="stylesheet" type="text/css" href="css/estilos.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" rel="stylesheet" href="js/jquery-ui.min.css">
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="css/about.css">
+    <!---LLAMADO DE function-->
+    <script type="text/javascript" src="js/bxslider.js"></script>
+    <script type="text/javascript" src="js/moment.js"></script>
+    <script type="text/javascript" src="js/scroll.js"></script>
+
+    <script type="text/javascript">
+      $(document).ready(function(){
+        setInterval(function(){
+          var reloj = moment().format('hh:mm:ss');
+          $('#reloj').html(reloj);
+        },1000);
+      });
+    </script>
+    <style media="screen">
+
+    #reloj{
+
+    display: block;
+      font-size: 2.2rem;
+      font-weight: bold;
+      font-family: Helvetica, arial;
+      color: #333;
+      padding:3px;
+      margin: 0 auto;
+      border: 4px dashed rgb(26, 25, 21);
+
+    }
+    #caja{
+      margin-top:5%;
+      line-height: 42px;
+      display: block;
+      float: left;
+      text-align: center;
+      width: 60%;
+      border: 1px solid green;
+    }
+    </style>
+
+</head>
+<body>
+<!--CAMBIO DE TEMA-->
+<div id="cambio_de_tema">
+  <div id="rosa">
+
+  </div>
+  <div id="rojo">
+
+  </div>
+  <div id="cafe"></div>
+</div>
+
+    <section id="global">
+        <!--Heste es el header-->
+        <header>
+            <div id="logo">
+                Proyecto
+            </div>
+            <div class="limpiar"></div>
+            <div class="buscador">
+                <input type="search" placeholder="buscador" style="display:block; float:right; margin-top:30px; margin-right:24px; line-height:1.5;">
+            </div>
+            <nav id="menu" align="center">
+                <ul>
+                    <li><a href="index.html" >Inicio</a></li>
+                    <li><a href="reloj.html" >Reloj</a></li>
+                    <li><a href="about.html" >Sobre mi</a></li>
+                    <li><a href="#" >Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!--Contenido-->
+        <div id="content">
+          <div id="caja">
+
+              <div id="reloj">
+              <!--Aqui ira el reloj usando moment.js-->
+              </div>
+            </div>
+
+            </div>
+            <div id="sidebar">
+              <div id="about">
+
+                <h4><hr><span>¿Quien soy?</span><hr></h4>
+                <img src="img/usuario.jpg" id="foto">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo minima vitae, blanditiis libero earum quis ea veritatis ipsum qui excepturi architecto, aut voluptate laborum numquam quas, ducimus fugiat! Necessitatibus, doloremque.</p>
+              </div>
+              <div id="login">
+                <h4><hr><span>Identificate</span><hr></h4>
+                <form action="#">
+                  <label for="nombre">nombre</label>
+                  <input type="text" name="nombre">
+                  <br>
+                  <label for="email">email</label>
+                  <input type="email" name="email">
+                  <br>
+                  <label for="passw">password</label>
+                  <input type="password">
+                  <br>
+                  <input type="submit" id="btningresar" value="Inicia ahora">
+                  <input type="submit" id="btnregistrar" value="Registrarse ahora">
+                </form>
+              </div>
+            </div>
+            <div class="limpiar"></div>
+        </div>
+    </section>
+    <footer>
+      <div class="copy">
+        blog hecho por
+        Copy &copy; julioj1081@hotmail.com
+      </div>
+      <a href="#" class="subir">Ir arriba</a>
+    </footer>
+</body>
+</html>

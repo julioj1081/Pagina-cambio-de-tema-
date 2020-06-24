@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Plantilla sencilla</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <!--LLAMADO DE TEMAS -->
+    <link id="tema" rel="stylesheet" type="text/css" href="css/estilos.css">
+    <!--LIBRERIAS DE SLIDER FOTOS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!---LLAMADO DE function-->
+    <script type="text/javascript" src="js/bxslider.js"></script>
+    <script type="text/javascript" src="js/moment.js"></script>
+    <script type="text/javascript" src="js/scroll.js"></script>
+
+    <!--Registro con ajax
+  -->
+  <script type="text/javascript" src="js/registro.js"></script>
+
+</head>
+<body>
+<!--CAMBIO DE TEMA-->
+<div id="cambio_de_tema">
+  <div id="rosa">
+
+  </div>
+  <div id="rojo">
+
+  </div>
+  <div id="cafe"></div>
+</div>
+
+    <section id="global">
+        <!--Heste es el header-->
+        <header>
+            <div id="logo">
+                Proyecto
+            </div>
+            <div class="limpiar"></div>
+            <div class="buscador">
+                <input type="search" placeholder="buscador" style="display:block; float:right; margin-top:30px; margin-right:24px; line-height:1.5;">
+            </div>
+            <nav id="menu" align="center">
+                <ul>
+                    <li><a href="index.html" >Inicio</a></li>
+                    <li><a href="reloj.html" >Reloj</a></li>
+                    <li><a href="about.html" >Sobre mi</a></li>
+                    <li><a href="#" >Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+        <!--SLIDER-->
+        <div id="slider" align="center">
+          <div class="bxslider">
+            <div><img src="img/coffee1.jpg" title="Funky roots"></div>
+            <div><img src="img/coffee2.jpg" title="The long and winding road"></div>
+            <div><img src="img/coffee3.jpg" title="Happy trees"></div>
+          </div>
+        </div>
+        <!--Contenido-->
+        <div id="content">
+            <div id="posts">
+              <!--CARGADO LOS DATOS CON UN JSON DESDE bxslider-->
+                <!--<article class="post">
+                    <h3>Titulo del articulo</h3>
+                    <span class="fecha">Fecha de publicacion</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur quibusdam nostrum possimus dolorum aperiam ut repudiandae laudantium, nihil ducimus soluta fugit tenetur at perferendis earum assumenda delectus quaerat illo?
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias ullam quisquam labore qui sequi, accusamus soluta, eos! At natus, consequatur deserunt sunt voluptates ducimus, delectus quis, ex enim velit assumenda.</p>
+                    <a href="#" class="btnleer">leer mas...</a>
+                </article>
+                <article class="post">
+                    <h3>Titulo del articulo 2</h3>
+                    <span class="fecha">Fecha de publicacion</span>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis consequatur quibusdam nostrum possimus dolorum aperiam ut repudiandae laudantium, nihil ducimus soluta fugit tenetur at perferendis earum assumenda delectus quaerat illo?</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias ullam quisquam labore qui sequi, accusamus soluta, eos! At natus, consequatur deserunt sunt voluptates ducimus, delectus quis, ex enim velit assumenda.</p>
+                    <a href="#" class="btnleer">leer mas...</a>
+                </article>-->
+            </div>
+            <div id="sidebar">
+              <div id="about">
+
+                <h4><hr><span>¿Quien soy?</span><hr></h4>
+                <img src="img/usuario.jpg" id="foto">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo minima vitae, blanditiis libero earum quis ea veritatis ipsum qui excepturi architecto, aut voluptate laborum numquam quas, ducimus fugiat! Necessitatibus, doloremque.</p>
+              </div>
+              <div id="login">
+                <h4><hr><span>Identificate</span><hr></h4>
+                <form id="formulario" method="post">
+                  <label for="nombre">nombre</label>
+                  <input type="text" name="nombre" id="nombre">
+                  <br>
+                  <label for="email">email</label>
+                  <input type="email" name="email" id="email">
+                  <br>
+                  <label for="passw">password</label>
+                  <input type="password" name="contra" id="contra">
+                  <br>
+                  <input type="submit" id="btningresar" value="Inicia ahora">
+                  <button type="button" name="button" id="btnregistrar">Registrarse</button>
+                </form>
+              </div>
+            </div>
+            <div class="limpiar"></div>
+        </div>
+    </section>
+    <footer>
+      <div class="copy">
+        blog hecho por
+        Copy &copy; julioj1081@hotmail.com
+      </div>
+      <a href="#" class="subir">Ir arriba</a>
+    </footer>
+</body>
+</html>
